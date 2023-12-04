@@ -8,7 +8,7 @@ function CodelandUsernameValidation(str) {
         -   [a-zA-Z0-9]$: Ensures that the username does not end with an underscore.
     */
 
-    return validateRegEx.test(str);
+    return validateRegEx.test(str) && str.length >= 4 && str.length <= 25;
     // return str; 
 
 };
