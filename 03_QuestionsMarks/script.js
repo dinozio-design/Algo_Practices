@@ -8,7 +8,7 @@ function QuestionsMarks(str) {
             if (Number(str[i])+Number(str[j]) === 10){
                 res = true;
                 // cound the Q Marks between the two indexes
-                if(str.slice(i,j).splice("?").length - 1 <3){
+                if(str.slice(i,j).split("?").length - 1 <3){
                     return false;
                 };
             };
