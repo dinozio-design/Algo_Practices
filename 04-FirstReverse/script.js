@@ -10,6 +10,3 @@ function FirstReverse(str) {
     return inputArr.join(""); 
   
   }
-     
-  // keep this function call here 
-  console.log(FirstReverse(readline()));
