@@ -2,12 +2,17 @@ import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 
 function Toggle() {
+    const [btnOn, setBtnOn] = useState(true);
   function handleClick() {
-    // todo
+    if(!btnOn){
+        setBtnOn(true);
+    } else {
+        setBtnOn(false);
+    };
   }
   
   return (
-    <button>ON</button>
+    <button onClick={handleClick}>{btnOn ? "ON" : "OFF"}</button>
   );
 }
 
